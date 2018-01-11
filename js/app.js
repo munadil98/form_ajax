@@ -1,10 +1,6 @@
 
 $(document).ready(function(){
 
-	$( function() {
-    	$( document ).tooltip();
-  	} );
-
 	$(".form").sortable();
 	// $("#at").text("Email can't be blank");
 	$("#email").keyup(function(){
@@ -83,16 +79,16 @@ $("#submit").click(function(){
 	
 	jQuery.ajax({
 		url: "form_data.php",
-		method: "POST",
+		type: "POST",
 		data: {
 			firstName:firstName,
 			lastName:lastName,
 			email:email
 
 		}, 
-		success: function(result){
-			console.log("firstName: "+firstName);
-        $("#success").text("Form successfully submitted");
+	success: function(result){
+		console.log("firstName: "+firstName);
+	$("#success").text("Form successfully submitted");
     	},
     	error: function(result){
     		console.log("error");
