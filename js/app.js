@@ -77,11 +77,12 @@ $(document).ready(function(){
 
 
 $("#submit").click(function(){
+
 	firstName=$("#firstName").val();
 	lastName=$("#lastName").val();
 	email=$("#email").val();
 
-	jQuery.ajax({
+	$.ajax({
 		url: "form_data.php",
 		type: "POST",
 		data: {
@@ -91,11 +92,10 @@ $("#submit").click(function(){
 
 		}, 
 		success: function(result){
-			console.log("firstName: "+firstName);
-        $("#success").text("Form successfully submitted");
+	        $("#success").text("Form successfully submitted");
     	},
     	error: function(result){
-    		console.log("error");
+    		$("#success").text("Error occured!");
     	}
     });
 
