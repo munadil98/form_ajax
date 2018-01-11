@@ -81,7 +81,7 @@ $("#submit").click(function(){
 	lastName=$("#lastName").val();
 	email=$("#email").val();
 	
-	$.ajax({
+	jQuery.ajax({
 		url: "form_data.php",
 		method: "POST",
 		data: {
