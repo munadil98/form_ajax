@@ -1,0 +1,65 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://use.fontawesome.com/4667c6741e.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+		<div class="container row col-md-10,col-sm-10,col-xs-10 form custom">
+			<div class="form1">
+				
+				  <div class="form-group">
+				    <!-- <label for="exampleInputEmail1">Email address</label> -->
+				    <input type="email" class="form-control" id="email" placeholder="Email Address*" required="required">
+				    <p class="at" id="at"></p>
+				  </div>
+				  <div class="form-group">
+				    <!-- <label>First Name</label> -->
+				    <input type="text" class="form-control" id="firstName" placeholder="First Name*" required="required">
+				    <p class="at" id="firstNameMessage"></p>
+				  </div>
+				  <div class="form-group">
+				    <!-- <label>Last Name</label> -->
+				    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+				    <p class="at" id="lastNameMessage"></p>
+				  </div>
+				  <div class="form-group">
+				    <!-- <label>Full Name</label> -->
+				    <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+				  </div>
+				  <div class="form-group">
+				    <!-- <label>Mobile</label> -->
+				    <input type="number" class="form-control" id="mobile" placeholder="Mobile:8801911310232">
+				  </div>
+				  <div class="form-group">
+				    <!-- <label>Address</label> -->
+				    <input type="text" class="form-control" id="address" placeholder="Address">
+				  </div>
+
+				   <button class="btn btn-default" id="submit">Submit</button>
+				   <p class="at" id="success"></p>
+
+			</div> <!-- div form1 -->
+
+		</div>
+
+<!-- add jquery CDN -->
+<script
+  src="http://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script src="js/app.js"></script>
+</body>
+</html>
