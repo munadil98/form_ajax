@@ -1,0 +1,74 @@
+body{
+	margin:0;
+	padding:0;
+	text-align: center;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.center{
+	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+
+
+
+.custom input{
+	width: 300px;
+	margin: 10px auto;
+
+
+}
+#gender{
+
+	height: 30px;
+	width: 150px;
+	margin: 15px auto;
+	background-color: white;
+	/*float: left;*/
+	font-size: 12px;
+	/*color: white;*/
+}
+
+.form3 ul{
+	list-style: none;
+	display: inline-block;
+	/*border: 1px dashed red;*/
+}
+
+.form3 ul li{
+	display: inline-block;
+	border: 1px dashed red;
+	margin: 10px 15px 5px 15px;
+}
+
+
+
+
+.form1, .form2, .form3, .form4{
+	border: 1px dashed red;
+	width: 80%;
+	margin: 15px auto;
+	background-color: coral;
+	/*background-color: coral;*/
+}
+/*
+.form1{
+	background-color: coral;
+}
+
+.form2{
+	background-color: grey;
+}
+
+.form3{
+	background-color: green;
+}
+
+.form4{
+	background-color: pink;
+}*/
