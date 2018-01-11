@@ -10,15 +10,15 @@ $(document).ready(function(){
 	$("#email").keyup(function(){
 
 		//Email Validity
-		var noData = $("#email").val();
-		console.log(noData);
+		var emailData = $("#email").val();
+		// console.log(noData);
 		var at=$("#email").val().indexOf("@");
 		var com=$("#email").val().indexOf(".com");
 		
-		if (noData=="") {
+		if (emailData=="") {
 			$("#at").text("Email can't be blank");
 		}
-		else if(noData!=""&&(at<=-1||com<=-1)){
+		else if(emailData!=""&&(at<=-1||com<=-1)){
 			$("#at").text("Not a valid Email");
 		}
 		else{
@@ -41,7 +41,7 @@ $(document).ready(function(){
 
 	$("#firstName").keyup(function(){
 		firstName=$("#firstName").val();
-		lastName=$("#lastName").val();
+		// lastName=$("#lastName").val();
 		
 		if (/\w/.test(firstName)) {
     		$("#firstNameMessage").text("");
@@ -59,7 +59,7 @@ $(document).ready(function(){
 
 	$("#lastName").keyup(function(){
 		lastName=$("#lastName").val();
-		lastName=$("#lastName").val();
+		// lastName=$("#lastName").val();
 		
 		if (/\w/.test(lastName)) {
     		$("#lastNameMessage").text("");
@@ -77,11 +77,19 @@ $(document).ready(function(){
 
 
 $("#submit").click(function(){
-
+	firstName=$("#firstName").val();
+	lastName=$("#lastName").val();
+	email=$("#email").val();
+	
 	$.ajax({
-		type: "POST",
 		url: "form_data.php",
-		data: firstName=firstName, 
+		method: "POST",
+		data: {
+			firstName:firstName,
+			lastName:lastName,
+			email:email
+
+		}, 
 		success: function(result){
 			console.log("firstName: "+firstName);
         $("#success").text("Form successfully submitted");
